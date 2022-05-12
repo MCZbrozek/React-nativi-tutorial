@@ -10,20 +10,39 @@ export default function App() {
     <View 
     style={{
       backgroundColor: "#fff",
-      flex: 1
+      flex: 1,
+      flexDirection: "row", // horizontal axis because direction is set to row
+      justifyContent: "center", 
+      alignItems: "center", // align items along the secodary axis (vertical)
+      alignContent: "center", // determines align of align content when wrapping is enabled
+      // flexWrap: "wrap",
     }} >
       <View style={{
         backgroundColor: "dodgerblue",
-        flex: 2,
+        flexBasis: 100, // width or height property
+        // width: 100,
+        height: 100,
       }} />
       <View style={{
         backgroundColor: "gold",
-        flex: 1,
+        width: 100,
+        height: 100,
       }} />
       <View style={{
         backgroundColor: "tomato",
-        flex: 1,
+        width: 100,
+        height: 100,
       }} />
+      {/* <View style={{
+        backgroundColor: "grey",
+        width: 100,
+        height: 100,
+      }} />
+      <View style={{
+        backgroundColor: "greenyellow",
+        width: 100,
+        height: 100,
+      }} /> */}
     </View>
 
 
