@@ -27,6 +27,9 @@ export default function App() {
         backgroundColor: "gold",
         width: 100,
         height: 100,
+        top: 50, // positions are relative so we can move these relative to the other objects.
+        left: 20,
+        // postion: "absolute", moves the item relative to the parent, the other objects will adjust.
       }} />
       <View style={{
         backgroundColor: "tomato",
